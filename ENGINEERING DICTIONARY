@@ -1,0 +1,20 @@
+# Bautista Marc Laurenz P. , 12-BSECE-01
+
+# Input: list of engineering terms and definitions
+engineering_terms = [
+    ("Blueprint", "A design plan or other technical drawing."),
+    ("Hertz", "SI derived unit for frequency defined as the number of cycles per second of a periodic function."),
+    ("Newton", "Force required to accelerate a mass of one kilogram at a rate of one meter per second per second."),
+    ("Power", "The rate at which work is performed."),
+    ("Rotor", "The rotating part of an electrical machine."),
+    ("Torque", "The rotational force produced by a motor."),
+    ("Watt", "SI unit of power.")
+]
+
+# Process: Storing and managing terms using list operations
+terms, definition = zip(*engineering_terms)
+
+# Output:Printing the terms and definitions in a dictionary format
+print("Engineering Terms and Definition")
+for term, definition in zip(terms, definition):
+    print(f"{term}:{definition}")
