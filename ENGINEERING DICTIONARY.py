@@ -1,0 +1,46 @@
+data = [
+    ("Force", "A push or pull on an object."),
+    ("Torque", "A measure of rotational force."),
+    ("Voltage", "The electrical potential difference."),
+    ("Current", "The flow of electric charge."),
+    ("Resistance", "Opposition to the flow of current."),
+    ("John", "a person from Asia."),
+    ("lomibao", "taga Binmaley."),
+    ("don_reji", "kalbo from UDD."),
+    ("sir_gab", "programming professor."),
+    ("bautista", "my surname."),
+    ("trump", "president of the United States."),
+    ("bybit", "crypto currency exchange."),
+    ("IPO", "input process output framework."),
+    ("tagalog", "language in the Philippines."),
+    ("UDD", "Universidad de Dagupan."),
+    ("Newton", "Unit of force in physics."),
+    ("Ohm", "Unit of electrical resistance."),
+    ("Watt", "Unit of power in physics."),
+    ("Faraday", "Scientist known for electromagnetism."),
+    ("Einstein", "Physicist known for relativity."),
+    ("Tesla", "Inventor known for AC electricity."),
+    ("Python", "A popular programming language."),
+    ("JavaScript", "A programming language for web."),
+    ("Algorithm", "A step-by-step problem-solving method."),
+    ("Database", "A structured collection of data."),
+    ("Bit", "The smallest unit of digital data."),
+    ("Byte", "8 bits, representing a character."),
+    ("AI", "Artificial Intelligence."),
+    ("Machine Learning", "A subset of AI for pattern recognition."),
+    ("Cybersecurity", "Protection of computer systems."),
+]
+
+def get_definition(term):
+    for t, definition in data:
+        if t == term:
+            return definition
+    return "wala."
+
+print("Data")
+print("Available terms:", [t for t, _ in data])
+
+user_input = input("What do you want to define:")
+print("dEINITION:", get_definition(user_input))
+
+
